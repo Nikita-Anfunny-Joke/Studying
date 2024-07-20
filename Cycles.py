@@ -45,9 +45,9 @@ while i < 5:
 #Output: 0 1 2 3 4
 
 # Здесь i никогда не бывает больше 5
-i = 0
-while i < 5:
-    print(i)
+#i = 0
+#while i < 5:
+#    print(i)
 
 #Output: 0 0 0 0 ...
 
