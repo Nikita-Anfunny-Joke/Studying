@@ -99,3 +99,13 @@ def zip_(list_1, list_2):
         new_list.append((list_1[i], list_2[i]))
     return (new_list)
 zip_([1, 5, 3, 8, 35],[2, 7, 9])
+
+
+
+def final_balance(init_sum, interest_rate, years, round_num=2):
+    end_sum = round((init_sum * ((100 + interest_rate) / 100) ** years), round_num)
+    return end_sum
+
+final_balance(1000, 5, 10)
+
+
