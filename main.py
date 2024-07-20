@@ -49,8 +49,8 @@ doings
 
 """
 
-answer = []
 
+answer = []
 for a in tasks.keys():
     if a > 2:  # Если приоритет меньше нуля надо добавить задачи
         continue
@@ -65,3 +65,17 @@ for a in tasks.keys():
 answer
 
 
+tasks = {
+    0: ["Покормить кота","Покормить кота"],
+    1: ["Покормить кота", "Забрать посылку"]
+}
+"""# Результат
+new_tasks = {
+    0: ['Покормить кота'],
+    1: ['Покормить кота', 'Забрать посылку']
+}
+"""
+new_tasks = {}
+for key, value in tasks.items():
+    new_tasks[key] = list(set(value))
+new_tasks
