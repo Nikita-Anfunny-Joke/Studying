@@ -28,4 +28,23 @@ print(type(logical_val))
 logical_val = False
 print(type(logical_val))
 
+""" ИЗМЕНЯЕМЫЕ ТИПЫ ДАННЫХ
+1) лист - list
+2) словарь - dict
+3) множества - set
+"""
+
+my_list = ["Strings", "Numbers", "Tuples", "Boolean"]
+print(type(my_list))
+
+my_dict = {
+"Lists": "mutable",
+"Strings": "immutable",
+"Numbers": "immutable"
+}
+
+print(type(my_dict))
+
+my_set = {"Strings", "Numbers", "Tuples", "Boolean"}
+print(type(my_set))
 
