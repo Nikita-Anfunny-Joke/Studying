@@ -48,3 +48,20 @@ for a in tasks.values():
 doings
 
 """
+
+answer = []
+
+for a in tasks.keys():
+    if a > 2:  # Если приоритет меньше нуля надо добавить задачи
+        continue
+    else:
+        for i in tasks.values():
+            if len(answer) >= 1:
+                break
+            for j in i:
+                if 'кот' in j:
+                    answer.append(j)
+
+answer
+
+
