@@ -48,3 +48,15 @@ print(type(my_dict))
 my_set = {"Strings", "Numbers", "Tuples", "Boolean"}
 print(type(my_set))
 
+""" ЛОГИЧЕСКИЕ ОПЕРАТРЫ
+true AND true = true
+true AND false = false
+
+true OR false = true
+
+NOT true = false
+false OR NOT false = true
+
+() > not > and > or
+"""
+
