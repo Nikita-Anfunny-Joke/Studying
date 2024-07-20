@@ -79,3 +79,23 @@ new_tasks = {}
 for key, value in tasks.items():
     new_tasks[key] = list(set(value))
 new_tasks
+
+def circle_square(radius):
+    S = (radius ** 2) * 3.14
+    return S
+
+circle_square(3)
+
+new_list = []
+def zip_(list_1, list_2):
+    if len(list_1) > len(list_2):
+        smol_list = list_2
+        big_list = list_1
+    else:
+        smol_list = list_1
+        big_list = list_2
+    min_len = len(smol_list)
+    for i in range(min_len):
+        new_list.append((list_1[i], list_2[i]))
+    return (new_list)
+zip_([1, 5, 3, 8, 35],[2, 7, 9])
