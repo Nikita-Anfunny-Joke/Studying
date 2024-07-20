@@ -80,12 +80,14 @@ for key, value in tasks.items():
     new_tasks[key] = list(set(value))
 new_tasks
 
+# задание: расчет площади круга
 def circle_square(radius):
     S = (radius ** 2) * 3.14
     return S
 
 circle_square(3)
 
+# задание: сшивание двух листов
 new_list = []
 def zip_(list_1, list_2):
     if len(list_1) > len(list_2):
@@ -101,7 +103,7 @@ def zip_(list_1, list_2):
 zip_([1, 5, 3, 8, 35],[2, 7, 9])
 
 
-
+# задание: расчет суммы выплаты по кредиту
 def final_balance(init_sum, interest_rate, years, round_num=2):
     end_sum = round((init_sum * ((100 + interest_rate) / 100) ** years), round_num)
     return end_sum
