@@ -169,9 +169,7 @@ print(math_task([1, 4, 5, 9])) # пример для самопроверки
 
 # ЗАДАЧА С ПОДСЧЕТОМ ЧИСЛА ИЗ СПИСКОВ
 
-
 int_value = []
-
 def sum_as_ints(list_):
     for element in list_:
         try:
@@ -179,3 +177,25 @@ def sum_as_ints(list_):
         except ValueError:
             print("Can't be converted to int")
     return sum(int_value)
+
+
+# ЗАДАЧА С РАЗВОРОТОМ ТЕКСТА
+
+def reversed_(array):
+    rv = []
+    for i in range(len(array)):
+        rv.append(array[i])
+    return rv
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+if reversed_(reversed_([1, 2, 3])) == [1, 2, 3]:
+    print("Все хорошо")
+else:
+    raise RuntimeError("Ошибка, после обращения дважды не получается исходный массив!")
+
+arr = [1, 2, 3]
+if reversed_(reversed_(arr)) == arr:
+    print("Все хорошо")
+else:
+    raise RuntimeError("Ошибка, после обращения дважды не получается исходный массив!")

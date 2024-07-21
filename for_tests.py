@@ -1,13 +1,11 @@
 
-int_value = []
 
-def sum_as_ints(list_):
-    for element in list_:
-        try:
-            int_value.append(int(element))
-        except ValueError:
-            print("Can't be converted to int")
-    return sum(int_value)
+def reversed_(array):
+    rv = []
+    for i in range(len(array)):
+        rv.append(array[i])
+    return rv
 
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-int("2,2")
+print(arr, reversed_(reversed_(arr)) == arr)
