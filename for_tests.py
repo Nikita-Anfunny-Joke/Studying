@@ -1,29 +1,13 @@
-# много другого кода, который тоже печатает
-# ...
-# Код коллеги
 
-def math_task(data):
-    answer = []
-    # возводим в третью степень
-    for elem in data:
-        answer += [elem ** 3]
-    print_array(answer)
-    # берем остаток от деления на 7
-    for i in range(len(answer)):
-        answer[i] = answer[i] % 7
-    print_array(answer)
-    # прибавляем к остатку изначальный массив
-    for i in range(len(answer)):
-        answer[i] = answer[i] + data[i]
-    # возвращаем результат
-    print_array(answer)
-    return answer
+int_value = []
 
-def print_array(answer):
-    print("###")
-    print(answer)
-    print("###")
+def sum_as_ints(list_):
+    for element in list_:
+        try:
+            int_value.append(int(element))
+        except ValueError:
+            print("Can't be converted to int")
+    return sum(int_value)
 
 
-#math_task(test_data)
-print(math_task([1, 4, 5, 9])) # пример для самопроверки
+int("2,2")

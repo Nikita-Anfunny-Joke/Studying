@@ -165,3 +165,17 @@ def print_array(answer):
 
 #math_task(test_data)
 print(math_task([1, 4, 5, 9])) # пример для самопроверки
+
+
+# ЗАДАЧА С ПОДСЧЕТОМ ЧИСЛА ИЗ СПИСКОВ
+
+
+int_value = []
+
+def sum_as_ints(list_):
+    for element in list_:
+        try:
+            int_value.append(int(element))
+        except ValueError:
+            print("Can't be converted to int")
+    return sum(int_value)

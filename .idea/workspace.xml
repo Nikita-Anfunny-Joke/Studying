@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fa048ad-a60f-42b6-b964-63a7d36ac009" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/for_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/for_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,10 +38,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.Studying.executor": "Run",
+    "Python.Testing.executor": "Run",
     "Python.for_tests.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Projects/Прект_оптимизация_фильтра_данных_реометра/Testing.py"
   }
 }]]></component>
   <component name="SharedIndexes">
