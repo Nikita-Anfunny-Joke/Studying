@@ -222,3 +222,19 @@ def find_substr(substring, string):
             return (i, i + len(substring))
 
 find_substr("ма", "маленькая машина")
+
+
+
+# ЗАДАЧА С ВЫВОДОМ КАЖДОГО 5го ЭЛЕМЕНТА С КОНЦА СПИСКА
+
+test1 = ['e',6,8,'A','>','^','S','$','R','C',6,'+','#',9,'/',1,'T','!','%','K',7,'-','O','*','<',2,'h',4,'g']
+
+answer = []
+def fifth_element(full_list: list) -> list:
+    for n in range(len(full_list) // 5):
+        print(n)
+        answer.append(full_list[(len(full_list)) - (5 * (n + 1))])
+        print(answer)
+    return answer
+
+fifth_element(test1)

@@ -1,13 +1,18 @@
 
 
-def find_substr(unstr, full_str):
-    first_znac = unstr[0]
-    last_znac = unstr[len(unstr)-1]
-    print(first_znac, last_znac)
-    if unstr in full_str:
-        return (full_str.index(first_znac), full_str.index(last_znac) +1)
-    else:
-        pass
+test1 = ['e',6,8,'A','>','^','S','$','R','C',6,'+','#',9,'/',1,'T','!','%','K',7,'-','O','*','<',2,'h',4,'g']
+
+print(len(test1))
+answer = []
+
+def fifth_element(full_list: list) -> list:
+    for n in range(len(full_list) // 5):
+        print(n)
+        answer.append(full_list[(len(full_list)) - (5 * (n + 1))])
+        print(answer)
+    return answer
 
 
-find_substr("ма", "маленькая машина")
+
+
+fifth_element(test1)
