@@ -1,11 +1,13 @@
 
 
-def reversed_(array):
-    rv = []
-    for i in range(len(array)):
-        rv.append(array[i])
-    return rv
+def find_substr(unstr, full_str):
+    first_znac = unstr[0]
+    last_znac = unstr[len(unstr)-1]
+    print(first_znac, last_znac)
+    if unstr in full_str:
+        return (full_str.index(first_znac), full_str.index(last_znac) +1)
+    else:
+        pass
 
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-print(arr, reversed_(reversed_(arr)) == arr)
+find_substr("ма", "маленькая машина")
