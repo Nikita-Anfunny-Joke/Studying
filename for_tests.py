@@ -1,10 +1,21 @@
 
-answer = []
-def process_string(string):
-    answer = string[1:].lower()
-    if 'intern' in answer:
-        answer = answer.replace('intern', 'junior')
-        print(answer)
-    return answer
 
-process_string('IIntern reads a lot of books')
+def check_string(string):
+    if (string[0] or string[(len(string) - 1)]) == ' ':
+        return False
+    if string[0].isupper() == True and string[1:-1].islower() == True:
+        return True
+    else:
+        return False
+    if string[- 1] == '.':
+        return True
+    else:
+        return False
+
+check_string('В этом году будет особенно теплое море.')
+
+
+
+
+
+
