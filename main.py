@@ -268,3 +268,11 @@ def check_string(string):
         return False
 
 check_string('В этом году будет особенно теплое море.')
+
+
+# ЗАДАЧА СОЗДАНИЯ ОБЪЕКТА С DATETIME
+
+import datetime as dt
+
+launch_date = dt.date(day=10, month=2, year=2022)
+
