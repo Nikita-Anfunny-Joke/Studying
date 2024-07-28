@@ -299,3 +299,17 @@ df = pd.read_sql(
         "postgres.lab.karpov.courses:6432/startml"
 )
 df.head(5)
+
+# ЗАДАНИЕ ТРЕУГОЛЬНИКА ЧЕРЕЗ КЛАСС
+
+from dataclasses import dataclass
+
+@dataclass
+class Triangle():
+    n_dots = 3
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+tr_1 = Triangle(1, 2, 2.5)
+tr_2 = Triangle(6, 8, 1)

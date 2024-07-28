@@ -232,3 +232,20 @@ True
 '   После опознания текста много    пробелов     '.strip()
 'После опознания текста много    пробелов'
 '''
+
+# КЛАССЫ И ООП
+
+# class - Ключевое слово
+# Auto - Название класса(записывается в CamelCase(СлитноКаждоеСловоСЗаглавной))
+# : - даёт понять python, что дальше идёт блок кода
+# @dataclass - упрощает создание класса в нашем случае
+
+from dataclasses import dataclass
+@dataclass
+class Auto:
+    color: str
+    manufacturer: str
+    series: str
+    fuel_type: str
+
+
