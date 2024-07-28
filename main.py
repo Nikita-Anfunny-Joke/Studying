@@ -313,3 +313,5 @@ class Triangle():
         self.c = c
 tr_1 = Triangle(1, 2, 2.5)
 tr_2 = Triangle(6, 8, 1)
+
+
