@@ -303,7 +303,6 @@ df.head(5)
 # ЗАДАНИЕ ТРЕУГОЛЬНИКА ЧЕРЕЗ КЛАСС
 
 from dataclasses import dataclass
-
 @dataclass
 class Triangle():
     n_dots = 3

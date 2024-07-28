@@ -1,20 +1,17 @@
 
+from dataclasses import dataclass
 
-# pip install psycopg2 если библиотека не установлена
-import psycopg2
+@dataclass
+class Triangle():
+    n_dots = 3
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
 
-database="startml",
-user="robot-startml-ro",
-password="pheiph0hahj1Vaif",
-host="postgres.lab.karpov.courses",
-port=6432
+    def find_p(self):
+        self.p = 1/2 * (a + b + c)
 
-import pandas as pd
 
-df = pd.read_sql(
-    """SELECT * FROM "feed_action" LIMIT 10 """,
-    con="postgresql://robot-startml-ro:pheiph0hahj1Vaif@"
-        "postgres.lab.karpov.courses:6432/startml"
-)
-
-df.head(5)
+tr_1 = Triangle(1, 2, 2.5)
+tr_2 = Triangle(6, 8, 1)
